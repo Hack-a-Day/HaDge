@@ -1,0 +1,27 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2015 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# NUF2221W1T2G
+#
+DEF NUF2221W1T2G IC 0 40 Y Y 1 L N
+F0 "IC" 0 0 50 H I L CNN
+F1 "NUF2221W1T2G" 0 0 50 H I L CNN
+F2 "SOT-363" 0 0 50 H I L CNN
+DRAW
+T 0 0 200 50 0 0 0 NUF2221W1T2G Normal 0 C B
+P 2 0 0 10 -300 300 300 300 N
+P 2 0 0 10 300 300 300 -500 N
+P 2 0 0 10 300 -500 -300 -500 N
+P 2 0 0 10 -300 -500 -300 300 N
+X D+O 1 400 -100 100 L 40 40 0 0 B 
+X SH_GND 2 -400 -400 100 R 40 40 0 0 O 
+X D-O 3 400 -200 100 L 40 40 0 0 B 
+X D-I 4 -400 -200 100 R 40 40 0 0 B 
+X VBUS 5 -400 100 100 R 40 40 0 0 I 
+X D+I 6 -400 -100 100 R 40 40 0 0 B 
+ENDDRAW
+ENDDEF
+#
+# End Library

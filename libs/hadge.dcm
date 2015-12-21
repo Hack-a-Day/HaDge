@@ -1,5 +1,22 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP CP_Small
+D Polarised capacitor
+$ENDCMP
+#
+$CMP C_Small
+D Polarised capacitor
+$ENDCMP
+#
+$CMP D_Schottky_Small
+D Diode Schottky
+$ENDCMP
+#
+$CMP R
+D Resistor
+K R DEV
+$ENDCMP
+#
 $CMP microUSB
 D micro/mini connector
 K USB USB_OTG USB_mini USB_micro

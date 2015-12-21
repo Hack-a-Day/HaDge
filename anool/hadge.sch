@@ -1,0 +1,293 @@
+EESchema Schematic File Version 2
+LIBS:hadge
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:hadge-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "HaDge"
+Date "2015-12-10"
+Rev "rev 1"
+Comp "Hackaday"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L VBUS #PWR1
+U 1 1 56696D39
+P 1350 750
+F 0 "#PWR1" H 1350 600 40  0001 C CNN
+F 1 "VBUS" H 1350 900 40  0000 C CNN
+F 2 "" H 1350 750 50  0000 C CNN
+F 3 "" H 1350 750 50  0000 C CNN
+	1    1350 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 850  1350 850 
+Wire Wire Line
+	1350 850  1350 750 
+$Comp
+L GND #PWR3
+U 1 1 56696D52
+P 1350 1950
+F 0 "#PWR3" H 1350 1700 50  0001 C CNN
+F 1 "GND" H 1350 1800 40  0000 C CNN
+F 2 "" H 1350 1950 50  0000 C CNN
+F 3 "" H 1350 1950 50  0000 C CNN
+	1    1350 1950
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1250 1150
+$Comp
+L NUF2221W1T2G U1
+U 1 1 56699DB9
+P 2275 950
+F 0 "U1" H 1975 1300 40  0000 L CNN
+F 1 "NUF2221W1T2G" H 1975 650 40  0001 L CNN
+F 2 "SOT-363" H 2225 500 40  0001 L CNN
+F 3 "" H 2275 950 40  0000 C CNN
+	1    2275 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L micro_USB J1
+U 1 1 56699EC9
+P 850 1050
+F 0 "J1" H 700 1500 40  0000 L CNN
+F 1 "micro_USB" V 1000 600 50  0000 L CNN
+F 2 "MOLEX_47346-0001" V 900 450 50  0001 L CNN
+F 3 "" H 850 1050 40  0000 C CNN
+	1    850  1050
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 1950 1350 1850
+Wire Wire Line
+	1250 1350 1875 1350
+Wire Wire Line
+	1350 1350 1350 1650
+Wire Wire Line
+	1250 1450 1350 1450
+Connection ~ 1350 1450
+Wire Wire Line
+	1250 1550 1350 1550
+Connection ~ 1350 1550
+Wire Wire Line
+	1350 1650 1250 1650
+Wire Wire Line
+	1250 1850 1750 1850
+$Comp
+L C_Small C1
+U 1 1 5669A177
+P 1550 1650
+F 0 "C1" H 1560 1720 40  0000 L CNN
+F 1 "4.7nF" H 1375 1575 40  0000 L CNN
+F 2 "" H 1550 1650 50  0000 C CNN
+F 3 "" H 1550 1650 50  0000 C CNN
+	1    1550 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 5669A1CE
+P 1750 1650
+F 0 "R1" V 1830 1650 40  0000 C CNN
+F 1 "1M" V 1750 1650 40  0000 C CNN
+F 2 "" V 1680 1650 50  0000 C CNN
+F 3 "" H 1750 1650 50  0000 C CNN
+	1    1750 1650
+	1    0    0    -1  
+$EndComp
+Connection ~ 1350 1350
+Wire Wire Line
+	1550 1550 1550 1350
+Connection ~ 1550 1350
+Wire Wire Line
+	1750 1500 1750 1350
+Connection ~ 1750 1350
+Wire Wire Line
+	1750 1850 1750 1800
+Connection ~ 1350 1850
+Wire Wire Line
+	1550 1750 1550 1850
+Connection ~ 1550 1850
+$Comp
+L VDD #PWR2
+U 1 1 5669A4C3
+P 1775 750
+F 0 "#PWR2" H 1775 600 40  0001 C CNN
+F 1 "VDD" H 1775 900 40  0000 C CNN
+F 2 "" H 1775 750 50  0000 C CNN
+F 3 "" H 1775 750 50  0000 C CNN
+	1    1775 750 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2675 1050 2950 1050
+Wire Wire Line
+	2675 1150 2950 1150
+Text Label 2950 1050 2    40   ~ 0
+D+O
+Text Label 2950 1150 2    40   ~ 0
+D-O
+Wire Wire Line
+	1775 750  1775 850 
+Wire Wire Line
+	1775 850  1875 850 
+Wire Wire Line
+	1250 950  1575 950 
+Wire Wire Line
+	1575 950  1575 1150
+Wire Wire Line
+	1575 1150 1875 1150
+Wire Wire Line
+	1250 1050 1875 1050
+$Comp
+L NCP1117ST33T3G U2
+U 1 1 5669A842
+P 1825 2800
+F 0 "U2" H 1825 3050 50  0000 C CNN
+F 1 "NCP1117ST33T3G" H 1825 3000 50  0000 C CNN
+F 2 "" H 1825 2800 50  0000 C CNN
+F 3 "" H 1825 2800 50  0000 C CNN
+	1    1825 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP_Small C2
+U 1 1 5669A881
+P 1225 3050
+F 0 "C2" H 1235 3120 40  0000 L CNN
+F 1 "10uF" H 1235 2970 40  0000 L CNN
+F 2 "" H 1225 3050 50  0000 C CNN
+F 3 "" H 1225 3050 50  0000 C CNN
+	1    1225 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP_Small C3
+U 1 1 5669A92F
+P 2400 3050
+F 0 "C3" H 2410 3120 40  0000 L CNN
+F 1 "10uF" H 2410 2970 40  0000 L CNN
+F 2 "" H 2400 3050 50  0000 C CNN
+F 3 "" H 2400 3050 50  0000 C CNN
+	1    2400 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1225 2650 1225 2950
+Wire Wire Line
+	975  2750 1425 2750
+Wire Wire Line
+	2225 2750 2400 2750
+Wire Wire Line
+	2400 2400 2400 2950
+Wire Wire Line
+	2400 3150 2400 3325
+Wire Wire Line
+	2400 3325 1225 3325
+Wire Wire Line
+	1225 3325 1225 3150
+Wire Wire Line
+	1825 3050 1825 3375
+Connection ~ 1825 3325
+$Comp
+L D_Schottky_Small D2
+U 1 1 5669AB57
+P 1225 2550
+F 0 "D2" H 1175 2630 40  0000 L CNN
+F 1 "BAT60J" H 1125 2475 40  0000 L CNN
+F 2 "" V 1225 2550 50  0000 C CNN
+F 3 "" V 1225 2550 50  0000 C CNN
+	1    1225 2550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L D_Schottky_Small D1
+U 1 1 5669ABE1
+P 975 2550
+F 0 "D1" H 925 2630 40  0000 L CNN
+F 1 "BAT60J" H 875 2475 40  0000 L CNN
+F 2 "" V 975 2550 50  0000 C CNN
+F 3 "" V 975 2550 50  0000 C CNN
+	1    975  2550
+	0    -1   -1   0   
+$EndComp
+Connection ~ 1225 2750
+Wire Wire Line
+	975  2750 975  2650
+$Comp
+L VBUS #PWR4
+U 1 1 5669ACBC
+P 1225 2400
+F 0 "#PWR4" H 1225 2250 40  0001 C CNN
+F 1 "VBUS" H 1225 2550 40  0000 C CNN
+F 2 "" H 1225 2400 50  0000 C CNN
+F 3 "" H 1225 2400 50  0000 C CNN
+	1    1225 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1225 2400 1225 2450
+$Comp
+L VDD #PWR5
+U 1 1 5669AD5B
+P 2400 2400
+F 0 "#PWR5" H 2400 2250 40  0001 C CNN
+F 1 "VDD" H 2400 2550 40  0000 C CNN
+F 2 "" H 2400 2400 50  0000 C CNN
+F 3 "" H 2400 2400 50  0000 C CNN
+	1    2400 2400
+	1    0    0    -1  
+$EndComp
+Connection ~ 2400 2750
+Text HLabel 975  2400 1    40   Input ~ 0
+VIN
+Wire Wire Line
+	975  2400 975  2450
+$Comp
+L GND #PWR?
+U 1 1 5669B36C
+P 1825 3375
+F 0 "#PWR?" H 1825 3125 50  0001 C CNN
+F 1 "GND" H 1825 3225 40  0000 C CNN
+F 2 "" H 1825 3375 50  0000 C CNN
+F 3 "" H 1825 3375 50  0000 C CNN
+	1    1825 3375
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

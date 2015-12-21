@@ -1,0 +1,31 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#(c) SnapEDA 2015 (snapeda.com)
+#This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA) with Design Exception 1.0
+#
+# 47346-0001
+#
+DEF 47346-0001 J 0 40 Y Y 1 L N
+F0 "J" 0 0 50 H I L CNN
+F1 "47346-0001" 0 0 50 H I L CNN
+F2 "MOLEX_47346-0001" 0 0 50 H I L CNN
+DRAW
+P 2 0 0 16 -200 400 -200 -900 N
+P 2 0 0 16 -200 -900 200 -900 N
+P 2 0 0 16 200 -900 200 400 N
+P 2 0 0 16 200 400 -200 400 N
+T 0 -200 500 80 0 0 0 >Name Normal 0 L B
+T 0 -200 -1000 82 0 0 0 >Value Normal 0 L B
+X D+ 3 -400 0 200 R 40 40 0 0 B 
+X D- 2 -400 100 200 R 40 40 0 0 B 
+X GND 5 -400 -800 200 R 40 40 0 0 O 
+X ID 4 -400 -100 200 R 40 40 0 0 B 
+X VBUS 1 -400 200 200 R 40 40 0 0 I 
+X SH4 M6 -400 -600 200 R 40 40 0 0 B 
+X SH3 M3 -400 -500 200 R 40 40 0 0 B 
+X SH2 M2 -400 -400 200 R 40 40 0 0 B 
+X SH1 M1 -400 -300 200 R 40 40 0 0 B 
+ENDDRAW
+ENDDEF
+#
+# End Library
