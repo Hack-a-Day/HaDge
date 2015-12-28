@@ -1,4 +1,4 @@
-update=Fri Dec 11 00:39:06 2015
+update=Tue Dec 29 00:07:43 2015
 version=1
 last_client=kicad
 [pcbnew]
@@ -26,7 +26,7 @@ NetIExt=net
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
-PlotDirectoryName=
+PlotDirectoryName=pdf/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=
@@ -37,38 +37,7 @@ LabSize=40
 version=1
 LibDir=
 [eeschema/libraries]
-LibName1=libs/hadge
-LibName2=libs/power
-LibName3=/home/samata/projects-git/HACK_kicad/hack
-LibName4=power
-LibName5=device
-LibName6=transistors
-LibName7=conn
-LibName8=linear
-LibName9=regul
-LibName10=74xx
-LibName11=cmos4000
-LibName12=adc-dac
-LibName13=memory
-LibName14=xilinx
-LibName15=microcontrollers
-LibName16=dsp
-LibName17=microchip
-LibName18=analog_switches
-LibName19=motorola
-LibName20=texas
-LibName21=intel
-LibName22=audio
-LibName23=interface
-LibName24=digital-audio
-LibName25=philips
-LibName26=display
-LibName27=cypress
-LibName28=siliconi
-LibName29=opto
-LibName30=atmel
-LibName31=contrib
-LibName32=valves
-LibName33=/home/samata/projects-git/JACK/jack
+LibName1=hack
+LibName2=power
 [general]
 version=1

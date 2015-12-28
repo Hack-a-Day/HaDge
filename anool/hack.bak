@@ -1,0 +1,840 @@
+EESchema Schematic File Version 2
+LIBS:hack
+LIBS:power
+LIBS:hack-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "HACK"
+Date ""
+Rev ""
+Comp "Hackaday - Michele Perla"
+Comment1 "HackAday Cortex Kit"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L ATSAMD21E U3
+U 1 1 5656E464
+P 5400 875
+F 0 "U3" H 5400 1075 40  0000 C CNB
+F 1 "ATSAMD21E" H 5400 975 40  0000 C CNB
+F 2 "hack:QFN-32-1EP_5x5mm_Pitch0.5mm" H 5400 875 40  0001 C CNB
+F 3 "" H 5400 875 40  0000 C CNB
+	1    5400 875 
+	1    0    0    -1  
+$EndComp
+$Comp
+L STF202 U2
+U 1 1 5656E679
+P 2200 900
+F 0 "U2" H 2200 950 40  0000 C CNB
+F 1 "STF202" H 2200 850 40  0000 C CNB
+F 2 "hack:TSOP-6" H 2200 900 40  0001 C CNB
+F 3 "" H 2200 900 40  0000 C CNB
+	1    2200 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L USB_micro P1
+U 1 1 5657010B
+P 1000 900
+F 0 "P1" H 1000 950 40  0000 C CNB
+F 1 "USB_micro" H 1000 850 40  0000 C CNB
+F 2 "hack:47346-0001" H 1000 900 40  0001 C CNB
+F 3 "" H 1000 900 40  0000 C CNB
+	1    1000 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L MC-306 X1
+U 1 1 56571094
+P 2100 4050
+F 0 "X1" H 2100 4050 40  0000 C CNB
+F 1 "MC-306" H 2100 3950 40  0000 C CNN
+F 2 "hack:MC-306" H 2100 4050 40  0001 C CNB
+F 3 "" H 2100 4050 40  0000 C CNB
+	1    2100 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R1
+U 1 1 565719DA
+P 1775 1725
+F 0 "R1" H 1825 1725 40  0000 L CNB
+F 1 "1M" V 1775 1725 40  0000 C CNN
+F 2 "hack:R_0603_HandSoldering" H 1775 1725 40  0001 C CNB
+F 3 "" H 1775 1725 40  0000 C CNB
+	1    1775 1725
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C5
+U 1 1 56571A23
+P 1450 1725
+F 0 "C5" H 1525 1725 40  0000 L CNB
+F 1 "4.5n" H 1525 1650 40  0000 L CNN
+F 2 "hack:C_0603_HandSoldering" H 1450 1725 40  0001 C CNB
+F 3 "" H 1450 1725 40  0000 C CNB
+	1    1450 1725
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR01
+U 1 1 56573EBE
+P 1975 1950
+F 0 "#PWR01" H 1975 1700 40  0001 C CNB
+F 1 "GND" H 1975 1800 40  0000 C CNB
+F 2 "" H 1975 1950 40  0000 C CNB
+F 3 "" H 1975 1950 40  0000 C CNB
+	1    1975 1950
+	1    0    0    -1  
+$EndComp
+Text GLabel 6200 1975 2    40   Input ~ 0
+USB-D-
+Text GLabel 6200 1875 2    40   Input ~ 0
+USB-D+
+$Comp
+L GND #PWR02
+U 1 1 5657449C
+P 2650 1000
+F 0 "#PWR02" H 2650 750 40  0001 C CNB
+F 1 "GND" H 2650 850 40  0000 C CNB
+F 2 "" H 2650 1000 40  0000 C CNB
+F 3 "" H 2650 1000 40  0000 C CNB
+	1    2650 1000
+	-1   0    0    1   
+$EndComp
+Text GLabel 4600 875  0    40   Output ~ 0
+XIN32
+Text GLabel 1375 4200 0    40   Input ~ 0
+XIN32
+Text GLabel 2825 4200 2    40   Output ~ 0
+XOUT32
+$Comp
+L GND #PWR03
+U 1 1 56575AA6
+P 2100 4550
+F 0 "#PWR03" H 2100 4300 40  0001 C CNB
+F 1 "GND" H 2100 4400 40  0000 C CNB
+F 2 "" H 2100 4550 40  0000 C CNB
+F 3 "" H 2100 4550 40  0000 C CNB
+	1    2100 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C6
+U 1 1 56575F2E
+P 1500 4350
+F 0 "C6" H 1575 4350 40  0000 L CNB
+F 1 "15p" H 1575 4275 40  0000 L CNN
+F 2 "hack:C_0603_HandSoldering" H 1500 4350 40  0001 C CNB
+F 3 "" H 1500 4350 40  0000 C CNB
+	1    1500 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C7
+U 1 1 56576565
+P 2700 4350
+F 0 "C7" H 2775 4350 40  0000 L CNB
+F 1 "15p" H 2775 4275 40  0000 L CNN
+F 2 "hack:C_0603_HandSoldering" H 2700 4350 40  0001 C CNB
+F 3 "" H 2700 4350 40  0000 C CNB
+	1    2700 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP_Small C3
+U 1 1 56577AD5
+P 3825 1775
+F 0 "C3" H 3750 1775 40  0000 R CNB
+F 1 "10u" H 3750 1700 40  0000 R CNN
+F 2 "hack:c_elec_3x5.3" H 3825 1775 40  0001 C CNB
+F 3 "" H 3825 1775 40  0000 C CNB
+	1    3825 1775
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C_Small C8
+U 1 1 56577B23
+P 4200 1775
+F 0 "C8" H 4125 1775 40  0000 R CNB
+F 1 "100n" H 4125 1700 40  0000 R CNN
+F 2 "hack:C_0603_HandSoldering" H 4200 1775 40  0001 C CNB
+F 3 "" H 4200 1775 40  0000 C CNB
+	1    4200 1775
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C_Small C9
+U 1 1 56578DF5
+P 6450 1375
+F 0 "C9" H 6525 1375 40  0000 L CNB
+F 1 "100n" H 6525 1300 40  0000 L CNN
+F 2 "hack:C_0603_HandSoldering" H 6450 1375 40  0001 C CNB
+F 3 "" H 6450 1375 40  0000 C CNB
+	1    6450 1375
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C10
+U 1 1 56578FD6
+P 6950 1375
+F 0 "C10" H 7025 1375 40  0000 L CNB
+F 1 "100n" H 7025 1300 40  0000 L CNN
+F 2 "hack:C_0603_HandSoldering" H 6950 1375 40  0001 C CNB
+F 3 "" H 6950 1375 40  0000 C CNB
+	1    6950 1375
+	1    0    0    -1  
+$EndComp
+$Comp
+L L_Small L2
+U 1 1 5657A334
+P 7300 925
+F 0 "L2" H 7350 925 40  0000 L CNB
+F 1 "10u" H 7350 850 40  0000 L CNN
+F 2 "hack:ELLVFG" H 7300 925 40  0001 C CNB
+F 3 "" H 7300 925 40  0000 C CNB
+	1    7300 925 
+	1    0    0    -1  
+$EndComp
+$Comp
+L FERRITE_BEAD L1
+U 1 1 5657A81E
+P 3550 1475
+F 0 "L1" V 3550 1375 40  0000 C CNB
+F 1 "BLM18EG221" H 3600 1575 40  0000 C CNN
+F 2 "hack:L_0603_HandSoldering" H 3550 1475 40  0001 C CNB
+F 3 "" H 3550 1475 40  0000 C CNB
+	1    3550 1475
+	0    -1   1    0   
+$EndComp
+$Comp
+L GND #PWR04
+U 1 1 5657B9E9
+P 4200 1875
+F 0 "#PWR04" H 4200 1625 40  0001 C CNB
+F 1 "GND" H 4200 1725 40  0000 C CNB
+F 2 "" H 4200 1875 40  0000 C CNB
+F 3 "" H 4200 1875 40  0000 C CNB
+	1    4200 1875
+	1    0    0    -1  
+$EndComp
+$Comp
+L CP_Small C4
+U 1 1 5657C55A
+P 7300 1375
+F 0 "C4" H 7375 1375 40  0000 L CNB
+F 1 "10u" H 7375 1300 40  0000 L CNN
+F 2 "hack:c_elec_3x5.3" H 7300 1375 40  0001 C CNB
+F 3 "" H 7300 1375 40  0000 C CNB
+	1    7300 1375
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X13 P2
+U 1 1 56587624
+P 1425 6175
+F 0 "P2" H 1425 6875 40  0000 C CNB
+F 1 "CONN_01X13" V 1525 6175 40  0000 C CNB
+F 2 "hack:Pin_Header_Straight_1x13" H 1425 6175 40  0001 C CNB
+F 3 "" H 1425 6175 40  0000 C CNB
+	1    1425 6175
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X13 P3
+U 1 1 56587957
+P 2275 6175
+F 0 "P3" H 2275 6875 40  0000 C CNB
+F 1 "CONN_01X13" V 2375 6175 40  0000 C CNB
+F 2 "hack:Pin_Header_Straight_1x13" H 2275 6175 40  0001 C CNB
+F 3 "" H 2275 6175 40  0000 C CNB
+	1    2275 6175
+	1    0    0    -1  
+$EndComp
+$Comp
+L Led_Small D1
+U 1 1 56587FAD
+P 6950 2300
+F 0 "D1" V 6950 2250 40  0000 R CNB
+F 1 "BLUE" V 6875 2250 40  0000 R CNN
+F 2 "hack:LED_0603_HandSoldering" V 6950 2300 40  0001 C CNB
+F 3 "" V 6950 2300 40  0000 C CNB
+	1    6950 2300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L R_Small R2
+U 1 1 56588562
+P 6950 1975
+F 0 "R2" H 7000 1975 40  0000 L CNB
+F 1 "68" V 6950 1975 40  0000 C CNN
+F 2 "hack:R_0603_HandSoldering" H 6950 1975 40  0001 C CNB
+F 3 "" H 6950 1975 40  0000 C CNB
+	1    6950 1975
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R4
+U 1 1 56589A59
+P 8000 1975
+F 0 "R4" H 7950 1975 40  0000 R CNN
+F 1 "330" V 8000 1975 40  0000 C CNN
+F 2 "hack:R_0603_HandSoldering" H 8000 1975 40  0001 C CNB
+F 3 "" H 8000 1975 40  0000 C CNB
+	1    8000 1975
+	-1   0    0    -1  
+$EndComp
+$Comp
+L C_Small C11
+U 1 1 56589C41
+P 7625 2300
+F 0 "C11" H 7700 2300 40  0000 L CNB
+F 1 "100n" H 7700 2225 40  0000 L CNN
+F 2 "hack:C_0603_HandSoldering" H 7625 2300 40  0001 C CNB
+F 3 "" H 7625 2300 40  0000 C CNB
+	1    7625 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L SPST-M S1
+U 1 1 5658420D
+P 8000 2300
+F 0 "S1" V 8000 2475 40  0000 L CNB
+F 1 "RST" V 7925 2475 40  0000 L CNN
+F 2 "hack:SPST" H 8000 2300 40  0001 C CNB
+F 3 "" H 8000 2300 40  0000 C CNB
+	1    8000 2300
+	0    1    -1   0   
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 56587427
+P 7625 2625
+F 0 "#PWR05" H 7625 2375 40  0001 C CNB
+F 1 "GND" H 7625 2475 40  0000 C CNB
+F 2 "" H 7625 2625 40  0000 C CNB
+F 3 "" H 7625 2625 40  0000 C CNB
+	1    7625 2625
+	-1   0    0    -1  
+$EndComp
+$Comp
+L GND #PWR06
+U 1 1 565868F0
+P 6950 2625
+F 0 "#PWR06" H 6950 2375 40  0001 C CNB
+F 1 "GND" H 6950 2475 40  0000 C CNB
+F 2 "" H 6950 2625 40  0000 C CNB
+F 3 "" H 6950 2625 40  0000 C CNB
+	1    6950 2625
+	1    0    0    -1  
+$EndComp
+Text GLabel 6200 1575 2    40   BiDi ~ 0
+PA28
+Text GLabel 7000 1775 2    40   BiDi ~ 0
+PA27
+Text GLabel 8050 1675 2    40   BiDi ~ 0
+!RESET
+Text GLabel 6200 2075 2    40   BiDi ~ 0
+PA23
+Text GLabel 6200 2175 2    40   BiDi ~ 0
+PA22
+Text GLabel 6200 2275 2    40   BiDi ~ 0
+PA19
+Text GLabel 6200 2375 2    40   BiDi ~ 0
+PA18
+Text GLabel 6200 2475 2    40   BiDi ~ 0
+PA17
+Text GLabel 6200 2575 2    40   BiDi ~ 0
+PA16
+Text GLabel 6200 875  2    40   BiDi ~ 0
+PA31/SWDIO
+Text GLabel 6200 975  2    40   BiDi ~ 0
+PA30/SWCLK
+Text GLabel 4600 2575 0    40   BiDi ~ 0
+PA15
+Text GLabel 4600 2475 0    40   BiDi ~ 0
+PA14
+Text GLabel 4600 2375 0    40   BiDi ~ 0
+PA11
+Text GLabel 4600 2275 0    40   BiDi ~ 0
+PA10
+Text GLabel 4600 2175 0    40   BiDi ~ 0
+PA09
+Text GLabel 4550 2075 0    40   BiDi ~ 0
+PA08
+Text GLabel 4600 1075 0    40   BiDi ~ 0
+PA02/A
+Text GLabel 4600 1175 0    40   BiDi ~ 0
+PA03/A
+Text GLabel 4600 1275 0    40   BiDi ~ 0
+PA04/A
+Text GLabel 4600 1375 0    40   BiDi ~ 0
+PA05/A
+Text GLabel 4600 1475 0    40   BiDi ~ 0
+PA06/A
+Text GLabel 4600 1575 0    40   BiDi ~ 0
+PA07/A
+$Comp
+L GND #PWR07
+U 1 1 56599C96
+P 2150 3300
+F 0 "#PWR07" H 2150 3050 40  0001 C CNB
+F 1 "GND" H 2150 3150 40  0000 C CNB
+F 2 "" H 2150 3300 40  0000 C CNB
+F 3 "" H 2150 3300 40  0000 C CNB
+	1    2150 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R3
+U 1 1 5659B02E
+P 7625 1525
+F 0 "R3" H 7675 1525 40  0000 L CNB
+F 1 "10k" V 7625 1525 40  0000 C CNN
+F 2 "hack:R_0603_HandSoldering" H 7625 1525 40  0001 C CNB
+F 3 "" H 7625 1525 40  0000 C CNB
+	1    7625 1525
+	1    0    0    1   
+$EndComp
+$Comp
+L GND #PWR08
+U 1 1 565A3C2E
+P 6950 1525
+F 0 "#PWR08" H 6950 1275 40  0001 C CNB
+F 1 "GND" H 7050 1425 40  0000 C CNB
+F 2 "" H 6950 1525 40  0000 C CNB
+F 3 "" H 6950 1525 40  0000 C CNB
+	1    6950 1525
+	1    0    0    -1  
+$EndComp
+Text GLabel 8075 1075 2    40   Input ~ 0
+VDDF
+Text GLabel 2925 2850 2    40   Input ~ 0
+VDD
+Text GLabel 3550 1725 3    40   Input ~ 0
+VDDANA
+Text GLabel 1375 2850 0    40   Input ~ 0
+VLDO
+Text GLabel 1450 1000 1    40   Input ~ 0
+VBUS
+Text GLabel 3525 1275 0    40   Input ~ 0
+VDD
+Text GLabel 8075 750  2    40   Input ~ 0
+VDD
+Text GLabel 8075 1225 2    40   Input ~ 0
+VDDF
+$Comp
+L MIC5528 U1
+U 1 1 567AC91D
+P 2150 2900
+F 0 "U1" H 2150 3150 40  0000 C CNB
+F 1 "MIC5528" H 2150 3050 40  0000 C CNB
+F 2 "hack:DFN-6-1EP_1.2x1.2mm_Pitch0.4mm" H 2150 3100 40  0001 C CNB
+F 3 "" H 2150 3100 40  0000 C CNB
+	1    2150 2900
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1800 2950
+$Comp
+L C_Small C1
+U 1 1 567ADE21
+P 1500 3100
+F 0 "C1" H 1575 3100 40  0000 L CNB
+F 1 "2.2u" H 1575 3025 40  0000 L CNN
+F 2 "hack:C_0603_HandSoldering" H 1500 3100 40  0001 C CNB
+F 3 "" H 1500 3100 40  0000 C CNB
+	1    1500 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C2
+U 1 1 567ADE94
+P 2800 3100
+F 0 "C2" H 2875 3100 40  0000 L CNB
+F 1 "2.2u" H 2875 3025 40  0000 L CNN
+F 2 "hack:C_0603_HandSoldering" H 2800 3100 40  0001 C CNB
+F 3 "" H 2800 3100 40  0000 C CNB
+	1    2800 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR09
+U 1 1 567C022D
+P 5400 2775
+F 0 "#PWR09" H 5400 2525 40  0001 C CNB
+F 1 "GND" H 5400 2625 40  0000 C CNB
+F 2 "" H 5400 2775 40  0000 C CNB
+F 3 "" H 5400 2775 40  0000 C CNB
+	1    5400 2775
+	1    0    0    -1  
+$EndComp
+$Comp
+L Jumper_NO_Small JP1
+U 1 1 567C1358
+P 1800 5150
+F 0 "JP1" H 1800 5230 40  0000 C CNB
+F 1 "Jumper_NO_Small" H 1810 5090 40  0001 C CNB
+F 2 "hack:SMD_Jumper" H 1800 5150 40  0001 C CNB
+F 3 "" H 1800 5150 40  0000 C CNB
+	1    1800 5150
+	1    0    0    -1  
+$EndComp
+Connection ~ 1500 2850
+Wire Wire Line
+	1500 3200 1500 3250
+Wire Wire Line
+	2800 3250 2800 3200
+Wire Wire Line
+	2800 2950 2500 2950
+Wire Wire Line
+	2500 2850 2925 2850
+Wire Wire Line
+	2800 2675 2800 3000
+Connection ~ 2800 2950
+Connection ~ 2800 2850
+Wire Wire Line
+	1450 1050 1450 1000
+Wire Wire Line
+	1400 1150 1800 1150
+Wire Wire Line
+	1400 1250 1800 1250
+Wire Wire Line
+	1400 1450 1975 1450
+Wire Wire Line
+	1450 1450 1450 1625
+Wire Wire Line
+	1775 1450 1775 1625
+Connection ~ 1450 1450
+Wire Wire Line
+	1775 2000 1775 1825
+Wire Wire Line
+	850  2000 1775 2000
+Wire Wire Line
+	850  1600 850  2000
+Wire Wire Line
+	1450 1825 1450 2000
+Connection ~ 1450 2000
+Connection ~ 1775 1450
+Wire Wire Line
+	1975 1450 1975 1950
+Wire Wire Line
+	2600 1150 2650 1150
+Wire Wire Line
+	2600 1250 2650 1250
+Wire Wire Line
+	2600 1050 2650 1050
+Wire Wire Line
+	2650 1050 2650 1000
+Wire Wire Line
+	4650 875  4600 875 
+Wire Wire Line
+	4650 975  4600 975 
+Wire Wire Line
+	1500 4450 1500 4500
+Wire Wire Line
+	1500 4500 2700 4500
+Wire Wire Line
+	2700 4500 2700 4450
+Wire Wire Line
+	1375 4200 1800 4200
+Wire Wire Line
+	1500 4200 1500 4250
+Connection ~ 1500 4200
+Wire Wire Line
+	2400 4200 2825 4200
+Wire Wire Line
+	2700 4200 2700 4250
+Connection ~ 2700 4200
+Wire Wire Line
+	2100 4550 2100 4500
+Connection ~ 2100 4500
+Wire Wire Line
+	2000 4500 2000 4400
+Connection ~ 2000 4500
+Wire Wire Line
+	2200 4400 2200 4500
+Connection ~ 2200 4500
+Wire Wire Line
+	3550 1675 4650 1675
+Connection ~ 3825 1675
+Connection ~ 4200 1675
+Wire Wire Line
+	3825 1875 4650 1875
+Connection ~ 4200 1875
+Wire Wire Line
+	6150 1275 6450 1275
+Wire Wire Line
+	6150 1475 7300 1475
+Wire Wire Line
+	6950 1475 6950 1475
+Wire Wire Line
+	6950 1475 6950 1525
+Connection ~ 6450 1475
+Wire Wire Line
+	6150 1075 8075 1075
+Connection ~ 6950 1075
+Connection ~ 6950 1475
+Wire Wire Line
+	7300 1025 7300 1275
+Wire Wire Line
+	6950 1275 6950 1075
+Connection ~ 7300 1075
+Wire Wire Line
+	6200 1975 6150 1975
+Wire Wire Line
+	6200 1875 6150 1875
+Wire Wire Line
+	6950 2075 6950 2200
+Wire Wire Line
+	6950 2400 6950 2625
+Wire Wire Line
+	8000 2525 7625 2525
+Wire Wire Line
+	7625 2400 7625 2625
+Wire Wire Line
+	7625 1625 7625 2200
+Connection ~ 7625 1675
+Connection ~ 7625 2525
+Wire Wire Line
+	6150 1575 6200 1575
+Wire Wire Line
+	6150 1775 7000 1775
+Wire Wire Line
+	6150 2075 6200 2075
+Wire Wire Line
+	6150 2175 6200 2175
+Wire Wire Line
+	6150 2275 6200 2275
+Wire Wire Line
+	6150 2375 6200 2375
+Wire Wire Line
+	6150 2475 6200 2475
+Wire Wire Line
+	6150 2575 6200 2575
+Wire Wire Line
+	4550 2075 4650 2075
+Wire Wire Line
+	4600 2175 4650 2175
+Wire Wire Line
+	4600 2275 4650 2275
+Wire Wire Line
+	4600 2375 4650 2375
+Wire Wire Line
+	4600 2475 4650 2475
+Wire Wire Line
+	4600 2575 4650 2575
+Wire Wire Line
+	6150 875  6200 875 
+Wire Wire Line
+	6150 975  6200 975 
+Wire Wire Line
+	7625 1225 7625 1425
+Wire Wire Line
+	6150 1675 8050 1675
+Wire Wire Line
+	8000 2075 8000 2150
+Wire Wire Line
+	8000 1675 8000 1875
+Connection ~ 8000 1675
+Wire Wire Line
+	3550 1625 3550 1725
+Connection ~ 3550 1675
+Wire Wire Line
+	1375 2850 1800 2850
+Wire Wire Line
+	1500 2850 1500 3000
+Wire Wire Line
+	3525 1275 3550 1275
+Wire Wire Line
+	3550 1275 3550 1325
+Wire Wire Line
+	8075 1225 7625 1225
+Wire Wire Line
+	1375 3250 2800 3250
+Connection ~ 2100 3250
+Connection ~ 2200 3250
+Wire Wire Line
+	2150 3250 2150 3300
+Connection ~ 2150 3250
+Connection ~ 1450 1050
+Wire Wire Line
+	1400 1050 1800 1050
+Text GLabel 1700 5150 0    40   Input ~ 0
+VBUS
+Text GLabel 1900 5150 2    40   Input ~ 0
+VLDO
+Text GLabel 1225 5575 0    40   Output ~ 0
+GND
+Text GLabel 1225 5675 0    40   BiDi ~ 0
+VLDO
+Text GLabel 1225 5775 0    40   Output ~ 0
+VDDF
+Text GLabel 1225 5875 0    40   BiDi ~ 0
+PA17
+Text GLabel 1225 5975 0    40   BiDi ~ 0
+PA18
+Text GLabel 1225 6075 0    40   BiDi ~ 0
+PA19
+Text GLabel 1225 6175 0    40   BiDi ~ 0
+PA22
+Text GLabel 1225 6275 0    40   BiDi ~ 0
+PA23
+Text GLabel 1225 6375 0    40   BiDi ~ 0
+PA27
+Text GLabel 1225 6475 0    40   Input ~ 0
+!RESET
+Text GLabel 1225 6575 0    40   BiDi ~ 0
+PA28
+Text GLabel 1225 6675 0    40   BiDi ~ 0
+PA30/SWCLK
+Text GLabel 1225 6775 0    40   BiDi ~ 0
+PA31/SWDIO
+Wire Wire Line
+	6950 1875 6950 1775
+Connection ~ 6950 1775
+$Comp
+L CONN_01X01 P4
+U 1 1 567C599F
+P 1425 7250
+F 0 "P4" H 1425 7350 40  0000 C CNB
+F 1 "CONN_01X01" V 1525 7250 40  0000 C CNB
+F 2 "hack:Pin_Header_Straight_1x01" H 1425 7250 40  0001 C CNB
+F 3 "" H 1425 7250 40  0000 C CNB
+	1    1425 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4650 1575 4600 1575
+Wire Wire Line
+	4650 1475 4600 1475
+Wire Wire Line
+	4650 1375 4600 1375
+Wire Wire Line
+	4650 1275 4600 1275
+Wire Wire Line
+	4650 1175 4600 1175
+Wire Wire Line
+	4650 1075 4600 1075
+Text GLabel 4600 975  0    40   Input ~ 0
+XOUT32
+Text GLabel 2650 1250 2    40   Output ~ 0
+USB-D+
+Text GLabel 2650 1150 2    40   Output ~ 0
+USB-D-
+Text GLabel 2075 5575 0    40   BiDi ~ 0
+PA02/A
+Text GLabel 2075 5675 0    40   BiDi ~ 0
+PA03/A
+Text GLabel 2075 5775 0    40   BiDi ~ 0
+PA04/A
+Text GLabel 2075 5875 0    40   BiDi ~ 0
+PA05/A
+Text GLabel 2075 5975 0    40   BiDi ~ 0
+PA06/A
+Text GLabel 2075 6075 0    40   BiDi ~ 0
+PA07/A
+Text GLabel 2075 6675 0    40   BiDi ~ 0
+PA15
+Text GLabel 2075 6575 0    40   BiDi ~ 0
+PA14
+Text GLabel 2075 6475 0    40   BiDi ~ 0
+PA11
+Text GLabel 2075 6375 0    40   BiDi ~ 0
+PA10
+Text GLabel 2075 6275 0    40   BiDi ~ 0
+PA09
+Text GLabel 2075 6175 0    40   BiDi ~ 0
+PA08
+Text GLabel 2075 6775 0    40   BiDi ~ 0
+PA16
+Text GLabel 1225 7250 0    40   Output ~ 0
+VDDANA
+$Comp
+L FIDUCIAL FID1
+U 1 1 567C2921
+P 5800 7425
+F 0 "FID1" H 5800 7575 40  0000 C CNB
+F 1 "FIDUCIAL" H 5800 7275 40  0000 C CNB
+F 2 "hack:FIDUCIAL" H 5800 7425 40  0001 C CNB
+F 3 "" H 5800 7425 40  0000 C CNB
+	1    5800 7425
+	1    0    0    -1  
+$EndComp
+$Comp
+L FIDUCIAL FID2
+U 1 1 567C2A0D
+P 6225 7425
+F 0 "FID2" H 6225 7575 40  0000 C CNB
+F 1 "FIDUCIAL" H 6225 7275 40  0000 C CNB
+F 2 "hack:FIDUCIAL" H 6225 7425 40  0001 C CNB
+F 3 "" H 6225 7425 40  0000 C CNB
+	1    6225 7425
+	1    0    0    -1  
+$EndComp
+$Comp
+L FIDUCIAL FID3
+U 1 1 567C2EF2
+P 6650 7425
+F 0 "FID3" H 6650 7575 40  0000 C CNB
+F 1 "FIDUCIAL" H 6650 7275 40  0000 C CNB
+F 2 "hack:FIDUCIAL" H 6650 7425 40  0001 C CNB
+F 3 "" H 6650 7425 40  0000 C CNB
+	1    6650 7425
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1400 1350
+Text Label 950  2000 0    40   ~ 0
+shield
+Wire Wire Line
+	8075 750  7300 750 
+Wire Wire Line
+	7300 750  7300 825 
+Wire Wire Line
+	8000 2450 8000 2525
+$Comp
+L PWR_FLAG #FLG010
+U 1 1 56824C17
+P 2800 2675
+F 0 "#FLG010" H 2800 2770 50  0001 C CNN
+F 1 "PWR_FLAG" H 2800 2855 40  0000 C CNN
+F 2 "" H 2800 2675 50  0000 C CNN
+F 3 "" H 2800 2675 50  0000 C CNN
+	1    2800 2675
+	1    0    0    -1  
+$EndComp
+Text Label 6450 1275 0    40   ~ 0
+VDDCORE
+Text GLabel 1375 3250 0    40   Output ~ 0
+GND
+Connection ~ 1500 3250
+$Comp
+L HACKADAY G2
+U 1 1 56826BC9
+P 10675 6825
+F 0 "G2" H 10675 6643 40  0001 C CNN
+F 1 "HACKADAY" H 10675 7007 40  0001 C CNN
+F 2 "" H 10675 6825 60  0000 C CNN
+F 3 "" H 10675 6825 60  0000 C CNN
+F 4 "mfr_pn" H 10675 6825 60  0001 C CNN "manf#"
+	1    10675 6825
+	1    0    0    -1  
+$EndComp
+$Comp
+L OSHW G1
+U 1 1 56826CD5
+P 10700 6100
+F 0 "G1" H 10700 6050 40  0001 C CNN
+F 1 "OSHW" H 10700 6200 40  0001 C CNN
+F 2 "" H 10700 6100 60  0000 C CNN
+F 3 "" H 10700 6100 60  0000 C CNN
+F 4 "mfr_pn" H 10700 6100 60  0001 C CNN "manf#"
+	1    10700 6100
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
